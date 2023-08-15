@@ -1,0 +1,282 @@
+/* ----------- Responsive for screen larger than 575px -----------*/
+@media screen and (min-width: 575px) {
+  /*----------- REUSED STYLE -------------*/
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /*---------- Header Section ----------*/
+  .header .container {
+    max-width: unset;
+  }
+}
+
+/* ----------- Responsive for screen larger than 768px -----------*/
+@media screen and (min-width: 768px) {
+  /*---------- Custom Property ----------*/
+  :root {
+    /* TYPOGRAPHY */
+    /* font size */
+    --fontSize-1: 5.5rem;
+    --fontSize-2: 4rem;
+
+    /* SPACING */
+    --section-spacing: 150px;
+  }
+
+  /*----------- REUSED STYLE -------------*/
+  .container {
+    max-width: 720px;
+  }
+
+  .section_text {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .grid_list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-secondary {
+    color: var(--text-white);
+    height: 52px;
+    border: 2px solid var(--border-blue-jeans);
+    padding-inline: 40px;
+  }
+
+  .btn-secondary:is(:hover, :focus-visible) {
+    background-color: var(--bg-blue-jeans);
+  }
+
+  /*---------- Header Section ----------*/
+  .header .btn {
+    display: grid;
+    margin-inline: auto 30px;
+  }
+
+  /*---------- Hero Section ----------*/
+  .hero {
+    padding-block: 180px;
+  }
+
+  .hero_content {
+    max-width: 560px;
+  }
+
+  .hero .input_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero .btn {
+    margin-block-start: 0;
+    min-width: max-content;
+  }
+
+  .hero_banner {
+    position: relative;
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  .hero .shape {
+    display: block;
+    position: absolute;
+    filter: var(--shadow-2);
+  }
+
+  .hero .shape_1 {
+    width: 13%;
+    top: 350px;
+    left: 80px;
+  }
+
+  .hero .shape_2 {
+    width: 16%;
+    top: 440px;
+    left: -20px;
+  }
+
+  .hero .shape_3 {
+    width: 20%;
+    bottom: -20px;
+    left: 80px;
+  }
+
+  /*---------- Footer Section ----------*/
+  .footer_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ----------- Responsive for screen larger than 992px -----------*/
+@media screen and (min-width: 992px) {
+  /*----------- REUSED STYLE -------------*/
+  .container {
+    max-width: 1050px;
+    padding-inline: 40px;
+  }
+
+  body.nav-active {
+    overflow: auto;
+  }
+
+  /*---------- Header Section ----------*/
+  .nav_open_btn,
+  .overlay {
+    display: none;
+  }
+
+  .header .logo img {
+    width: max-content;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    margin-inline-start: 80px;
+  }
+
+  .navbar_list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .navbar_list > li:not(:last-child) {
+    margin-block-end: 0;
+  }
+
+  .navbar_link {
+    color: var(--text-white);
+    transition: var(--transition-1);
+  }
+
+  .navbar_link:is(:hover, :focus-visible) {
+    color: var(--text-white-alpha-60);
+  }
+
+  .header .btn {
+    margin-inline-end: 0;
+  }
+
+  /*---------- Hero Section ----------*/
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  /*---------- Process Section ----------*/
+  .process_banner {
+    display: block;
+    min-width: 400px;
+    margin-inline: auto;
+  }
+
+  .process .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .process_item {
+    text-align: left;
+  }
+
+  .process_item .item_icon {
+    margin-inline: 0;
+  }
+
+  .process .grid_list {
+    gap: 30px 40px;
+  }
+
+  /*---------- Works Section ----------*/
+  .works .grid_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*---------- Footer Section ----------*/
+  .footer_top .container {
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  .footer_bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer_bottom_list {
+    margin-block-start: 0;
+    gap: 50px;
+  }
+}
+
+/* ----------- Responsive for screen larger than 1200px -----------*/
+@media screen and (min-width: 1200px) {
+  /*---------- Custom Property ----------*/
+  :root {
+    /* TYPOGRAPHY */
+    /* font size */
+    --fontSize-1: 7rem;
+    --fontSize-3: 2.8rem;
+  }
+
+  /*----------- REUSED STYLE -------------*/
+  .container {
+    max-width: 1140px;
+  }
+
+  .section_text {
+    min-width: 750px;
+  }
+}
+
+/* ----------- Responsive for screen larger than 1400px -----------*/
+@media screen and (min-width: 1400px) {
+  /*---------- Custom Property ----------*/
+  :root {
+    /* TYPOGRAPHY */
+    /* font size */
+    --fontSize-1: 8rem;
+  }
+
+  /*----------- REUSED STYLE -------------*/
+  .container {
+    max-width: 1350px;
+  }
+
+  .section_text {
+    margin-block-end: 60px;
+  }
+
+  /*---------- Hero Section ----------*/
+  .hero_text {
+    font-size: 1.8rem;
+    margin-block: 40px;
+  }
+
+  /*---------- Process Section ----------*/
+  .process .wrapper {
+    grid-template-columns: 0.7fr 1fr;
+    gap: 130px;
+  }
+
+  .process_item .item_icon {
+    width: 80px;
+  }
+
+  .process_item .item_title {
+    margin-block: 25px 15px;
+  }
+
+  .process .grid_list {
+    row-gap: 50px;
+  }
+}
